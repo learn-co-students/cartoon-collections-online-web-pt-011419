@@ -20,24 +20,6 @@ end
 
 
 def find_the_cheese(array)
-  if cheese_types.include_any?("cheddar", "gouda", "camembert")
-array.each {|e|
-  if (e == "cheddar")
-    return "cheddar"
-    break
-  elsif (e == "gouda")
-    return "gouda"
-    break
-  elsif (e == "camembert")
-    return "camembert"
-    break
-
-else
-  nil
+  array.find {|e| e == "cheddar" || e == "gouda" || e == "camembert"}
+  end
 end
-}
-end
-
-
-soup = ["tomato soup", "cheddar", "oyster crackers", "gouda"]
-find_the_cheese(soup)
