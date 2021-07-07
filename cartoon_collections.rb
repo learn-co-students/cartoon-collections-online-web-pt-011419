@@ -1,16 +1,16 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+def roll_call_dwarves["Doc", "Dopey", "Bashful", "Grumpy"] .each do |name|
+  puts "there are #{ name.length} letters in #{name}"
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+planeteer_calls["earth", "wind", "fire", "water", "heart"]
+planeteer_calls ..map! {|name| name.capitalize }
+ put "#{planeteer_calls}!"
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+long_words = ["earth", "wind", "fire", "water", "heart"]
+  long_planeteer_calls(long_words)
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
-  cheese_types = ["cheddar", "gouda", "camembert"]
+foods = ["cheddar", "rice", "tomato"]
+find_the_cheese(foods)
 end
